@@ -1,0 +1,24 @@
+
+curl -i -H Accept:application/json -X POST http://192.168.1.65:8685/v1/user/accountstate -d '{"address":"n1bH1wF6wVcAk9szAzYga1ZqbSqjduiZoYb"}'
+{"result":{"balance":"1999999999915159999580044","nonce":"4242","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.65:8685/v1/user/accountstate -d '{"address":"n1Pn53VRExyR19hogeLqLJJb12ZfxsmT4gP"}'
+{"result":{"balance":"2999999999915120000419956","nonce":"4244","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.66:8685/v1/user/accountstate -d '{"address":"n1bH1wF6wVcAk9szAzYga1ZqbSqjduiZoYb"}'
+{"result":{"balance":"1999999999915159999580044","nonce":"4242","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.66:8685/v1/user/accountstate -d '{"address":"n1Pn53VRExyR19hogeLqLJJb12ZfxsmT4gP"}'
+{"result":{"balance":"2999999999915120000419956","nonce":"4244","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.37:8685/v1/user/accountstate -d '{"address":"n1VXrqg88vVWxsctVE7cmbtQujWuWRsrUrz"}'
+{"result":{"balance":"2999999999956079999782695","nonce":"2196","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.37:8685/v1/user/accountstate -d '{"address":"n1TuTzjbBsLaqHrv4TssFdxwBmLHfujmpuq"}'
+{"result":{"balance":"2999999999956080000217305","nonce":"2196","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.42:8685/v1/user/accountstate -d '{"address":"n1VXrqg88vVWxsctVE7cmbtQujWuWRsrUrz"}'
+{"result":{"balance":"2999999999956079999782695","nonce":"2196","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.42:8685/v1/user/accountstate -d '{"address":"n1TuTzjbBsLaqHrv4TssFdxwBmLHfujmpuq"}'
+{"result":{"balance":"2999999999956080000217305","nonce":"2196","type":87}}

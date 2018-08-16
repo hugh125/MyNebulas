@@ -1,5 +1,5 @@
 package main
-
+ 
 import (
 	"net/http"
 	"bytes"
@@ -125,9 +125,12 @@ func main() {
 	//newh2:n1Pn53VRExyR19hogeLqLJJb12ZfxsmT4gP
 	//Pih1:n1aXC9QBsvBhUgt4WkEBeLxsbJeJV8DUWDr
 	//Pih2:n1QyRg1DGBp6kgV6qZL9M7V7f1YEAiUGcMD
+	//Pih1:n1VXrqg88vVWxsctVE7cmbtQujWuWRsrUrz
+	//Pih1 := "n1d8F3u7FjPARwpbiQdsaExaFWdAfjjRDrg"
+	// Pih2 := "n1QVhi6j72fc2vtS7CX9tSxqQfHbdBsNnmp"
 
+	//
 	AOCIPs := [2]string {"192.168.1.65", "192.168.1.66"}
-	PiIPs := [2]string  {"192.168.1.37", "192.168.1.42"}
 
 	for _, ip := range AOCIPs{
 		IP = ip
@@ -137,24 +140,19 @@ func main() {
 		newh2.getaccountstate()
 		println()
 	}
-
+/*
+	PiIPs := [2]string  {"192.168.1.37", "192.168.1.42"}
 	for _, ip := range PiIPs{
 		IP = ip
-		newh1 := NewWallet("n1aXC9QBsvBhUgt4WkEBeLxsbJeJV8DUWDr")
-		newh2 := NewWallet("n1QyRg1DGBp6kgV6qZL9M7V7f1YEAiUGcMD")
+		newh1 := NewWallet("n1d8F3u7FjPARwpbiQdsaExaFWdAfjjRDrg")
+		newh2 := NewWallet("n1QVhi6j72fc2vtS7CX9tSxqQfHbdBsNnmp")
+		//
 		newh1.getaccountstate()
 		newh2.getaccountstate()
+		// newh3 := NewWallet("n1XkoVVjswb5Gek3rRufqjKNpwrDdsnQ7Hq")
+		// newh3.getaccountstate()
 		println()
 	}
-	//2006-01-02 15:04:05
-	//for{
-	//	strP := (time.Now().Format("20060102_15_04"))
-	//	println(strP)
-	//
-	//	logWrite.WriteLog(strP)
-	//	logWrite.LastLog = strP
-	//	time.Sleep(time.Second * 5)
-	//}
-	//
+*/	
 	println("End...")
 }

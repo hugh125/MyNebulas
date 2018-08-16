@@ -1,0 +1,14 @@
+
+curl -i -H Accept:application/json -X POST http://192.168.1.14:8685/v1/user/accountstate -d '{"address":"n1bH1wF6wVcAk9szAzYga1ZqbSqjduiZoYb"}'
+{"result":{"balance":"1999999999993579999988210","nonce":"321","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.14:8685/v1/user/accountstate -d '{"address":"n1Pn53VRExyR19hogeLqLJJb12ZfxsmT4gP"}'
+{"result":{"balance":"1999999999993760000011790","nonce":"312","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.19:8685/v1/user/accountstate -d '{"address":"n1bH1wF6wVcAk9szAzYga1ZqbSqjduiZoYb"}'
+{"result":{"balance":"1999999999993579999988210","nonce":"321","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.19:8685/v1/user/accountstate -d '{"address":"n1Pn53VRExyR19hogeLqLJJb12ZfxsmT4gP"}'
+{"result":{"balance":"1999999999993760000011790","nonce":"312","type":87}}
+
+curl -i -H Accept:application/json -X POST http://192.168.1.37:8685/v1/user/accountstate -d '{"address":"n1VzKHSka6L8sQ28XXWquB4kCDEykvfhZAu"}'
